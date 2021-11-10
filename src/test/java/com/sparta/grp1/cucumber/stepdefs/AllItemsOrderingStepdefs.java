@@ -60,7 +60,7 @@ public class AllItemsOrderingStepdefs {
 
     @And("Click Name\\(A-Z)")
     public void clickNameAZ() {
-        productsPOM.
+        productsPOM.clickName();
     }
 
     @Then("The item ordering should be A-Z")
