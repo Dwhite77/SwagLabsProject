@@ -37,7 +37,7 @@ public class AllItemsOrderingStepdefs {
         }
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
+        //chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--window-size=1265,1380");
         webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
         loginPOM = new LoginPOM(webDriver);
