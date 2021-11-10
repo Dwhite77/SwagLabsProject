@@ -1,3 +1,4 @@
+@tag(checkout_step_two_functionality)
 Feature: Checkout: Overview functionality
 
   Scenario: I am verifying the details order page
