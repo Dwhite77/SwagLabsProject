@@ -1,3 +1,4 @@
+@tag(checkout_step_two_navigation)
 Feature: Navigation checkout: Overview page
 
   Scenario: Placing an order
