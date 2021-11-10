@@ -1,11 +1,22 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class AllItemsOrderingStepdefs {
+
+    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+
+
+    @Before
+    public void initAll(){
+    }
+
+
     @Given("I am on the all items page")
     public void iAmOnTheAllItemsPage() {
     }
@@ -60,5 +71,9 @@ public class AllItemsOrderingStepdefs {
 
     @And("The ordering is Price\\(H-L)")
     public void theOrderingIsPriceHL() {
+    }
+
+    @After
+    public void teardownAll(){
     }
 }
