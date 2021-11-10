@@ -22,7 +22,6 @@ public class ProductInfoStepDef {
     private ChromeDriverService service;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
-
     @Before
     public void init() {
         ChromeOptions chromeOptions = new ChromeOptions()
@@ -63,15 +62,15 @@ public class ProductInfoStepDef {
         webDriver.findElement(By.id("item_"+arg0+"_img_link")).click();
     }
 
+    @And("Go back to products page")
+    public void goBackToProductsPage() {
+        webDriver.navigate().back();
+    }
+
     @After
     public void teardownAll() {
         webDriver.close();
         webDriver.quit();
 
-    }
-
-    @And("Go back to products page")
-    public void goBackToProductsPage() {
-        webDriver.navigate().back();
     }
 }
