@@ -37,8 +37,8 @@ public class AllItemsOrderingStepdefs {
         }
 
         ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--window-size=1265,1380"); // this is the fix, only works for this one browser window size, actually works for a couple of sizes but not full screen
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--window-size=1265,1380");
         webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
         loginPOM = new LoginPOM(webDriver);
         productsPOM = new ProductsPOM(webDriver);
