@@ -62,15 +62,15 @@ public class ProductInfoStepDef {
         webDriver.findElement(By.id("item_"+arg0+"_img_link")).click();
     }
 
+    @And("Go back to products page")
+    public void goBackToProductsPage() {
+        webDriver.navigate().back();
+    }
+
     @After
     public void teardownAll() {
         webDriver.close();
         service.stop();
         //webDriver.quit();
-    }
-
-    @And("Go back to products page")
-    public void goBackToProductsPage() {
-        webDriver.navigate().back();
     }
 }
