@@ -29,14 +29,15 @@ public class ProductsPOM extends AbstractPOM{
         setWebDriver(webDriver);
     }
 
-    public BasketPOM goToBasketPage(){
-        getWebDriver().findElement(By.cssSelector(".shopping_cart_link")).click();
-        return new BasketPOM(getWebDriver());
-    }
+//    public BasketPOM goToBasketPage(){
+//        getWebDriver().findElement(By.cssSelector(".shopping_cart_link")).click();
+//        return new BasketPOM(getWebDriver());
+//    }
 
     public void openDropDown(){
         getWebDriver().findElement(By.className("product_sort_container")).click();
     }
+
     public void clickName(String value){
         Select dropdown = new Select(getWebDriver().findElement(By.className("product_sort_container")));
         dropdown.selectByValue(value);

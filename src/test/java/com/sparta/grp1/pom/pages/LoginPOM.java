@@ -28,7 +28,7 @@ public class LoginPOM extends AbstractPOM{
         }
     }
 
-    public void LoginPOM(WebDriver webDriver){
+    public LoginPOM(WebDriver webDriver){
         this.webDriver = webDriver;
         goToLoginPage();
     }
