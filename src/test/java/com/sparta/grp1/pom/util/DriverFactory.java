@@ -50,4 +50,22 @@ public class DriverFactory {
         }return webDriver;
     }
 
+
+    public static WebDriver getWebDriver(Browsers name, ChromeOptions options){
+        WebDriver webDriver = null;
+        switch (name){
+            case CHROME:
+                webDriver = new ChromeDriver(options);
+                break;
+            case FIREFOX:
+                webDriver = new FirefoxDriver();
+                break;
+            case INTERNET_EXPLORER:
+                webDriver = new InternetExplorerDriver();
+                break;
+            case SAFARI:
+                webDriver = new SafariDriver();
+                break;
+        }return webDriver;
+    }
 }
