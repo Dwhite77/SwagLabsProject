@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPOM extends AbstractPOM{
 
-    private WebDriver webDriver;
     private By basketPage = new By.ById("shopping_cart_container");
 
     public enum userName{
@@ -29,24 +28,28 @@ public class LoginPOM extends AbstractPOM{
     }
 
     public LoginPOM(WebDriver webDriver){
-        this.webDriver = webDriver;
+        setWebDriver(webDriver);
         goToLoginPage();
     }
 
     public void goToLoginPage(){
-        webDriver.get("https://www.saucedemo.com/");
+        getWebDriver().get("https://www.saucedemo.com/");
     }
 
     public ProductsPOM loginToProductsPage(userName userName){
-        webDriver.findElement(By.id("user-name")).sendKeys(getUserName(userName)); //may need to press login button instead
-        webDriver.findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
-        return new ProductsPOM(webDriver);
+        getWebDriver().findElement(By.id("user-name")).sendKeys(getUserName(userName)); //may need to press login button instead
+        getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
+        return new ProductsPOM(getWebDriver());
+    }
+
+    public boolean loginSuccessful(){
+        return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/inventory.html");
     }
 
     public boolean invalidLogin(){
-        webDriver.findElement(By.id("user-name")).sendKeys("random"); //may need to press login button instead
-        webDriver.findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
-        return webDriver.getCurrentUrl().equals("https://www.saucedemo.com/");
+        getWebDriver().findElement(By.id("user-name")).sendKeys("random"); //may need to press login button instead
+        getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
+        return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/");
     }
 
 
