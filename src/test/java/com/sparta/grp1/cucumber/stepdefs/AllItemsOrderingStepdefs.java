@@ -10,6 +10,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -36,8 +37,8 @@ public class AllItemsOrderingStepdefs {
         }
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--window-size=1265,1380"); // this is the fix, only works for this one browser window size, actually works for a couple of sizes but not full screen
+        //chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--window-size=1265,1380");
         webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
         loginPOM = new LoginPOM(webDriver);
         productsPOM = new ProductsPOM(webDriver);
@@ -60,11 +61,12 @@ public class AllItemsOrderingStepdefs {
 
     @And("Click Name\\(A-Z)")
     public void clickNameAZ() {
-        productsPOM.
+        productsPOM.clickName();
     }
 
     @Then("The item ordering should be A-Z")
     public void theItemOrderingShouldBeAZ() {
+        Assertions.assertEquals("https://www.saucedemo.com/inventory.html", productsPOM.getPageURL());
     }
     //-----------------------------------------------
     @And("The ordering is Z-A")

@@ -66,8 +66,8 @@ public class ProductInfoStepDef {
     @After
     public void teardownAll() {
         webDriver.close();
-        service.stop();
-        //webDriver.quit();
+        webDriver.quit();
+
     }
 
     @And("Go back to products page")
