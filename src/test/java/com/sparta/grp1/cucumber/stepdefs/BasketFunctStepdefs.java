@@ -4,7 +4,6 @@ import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,12 +14,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.*;
+public class BasketFunctStepdefs {
 
-public class ProductInfoStepDef {
     private WebDriver webDriver;
     private ChromeDriverService service;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+
 
     @Before
     public void init() {
@@ -29,12 +28,13 @@ public class ProductInfoStepDef {
                 .addArguments("--window-size=1265,1380");
         DriverUtil.setDriverLocation(DRIVER_LOCATION);
         service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
+        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME,service, chromeOptions);
         try {
             service.start();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME,service, chromeOptions);
+
         //login to get to products page
         webDriver.get("https://www.saucedemo.com/");
         webDriver.findElement(By.id("user-name")).sendKeys("standard_user");
@@ -42,35 +42,41 @@ public class ProductInfoStepDef {
         webDriver.findElement(By.id("login-button")).click();
     }
 
-    @Given("I am on the products page")
-    public void iAmOnTheProductsPage() {
-        //assertEquals("https://www.saucedemo.com/inventory.html", webDriver.getCurrentUrl());
+    @Given("I am on the basket page")
+    public void iAmOnTheBasketPage() {
     }
 
-    @When("I click on the product {string} name tag")
-    public void iClickOnTheProductNameTag(String arg0) {
-        webDriver.findElement(By.id("item_"+arg0+"_title_link")).click();
+    @When("I view my items")
+    public void iViewMyItems() {
     }
 
-    @Then("I will go to the products info page for {string}")
-    public void iWillGoToTheProductsInfoPageFor(String arg0) {
-        assertEquals("https://www.saucedemo.com/inventory-item.html?id="+arg0, webDriver.getCurrentUrl());
+    @Then("I see the correct items")
+    public void iSeeTheCorrectItems() {
     }
 
-    @When("I click on the image for product {string}")
-    public void iClickOnTheImageForProduct(String arg0) {
-        webDriver.findElement(By.id("item_"+arg0+"_img_link")).click();
+    @Then("I see the correct total")
+    public void iSeeTheCorrectTotal() {
     }
 
-    @And("Go back to products page")
-    public void goBackToProductsPage() {
-        webDriver.navigate().back();
+    @Given("I am have items in the basket")
+    public void iAmHaveItemsInTheBasket() {
+    }
+
+    @When("I remove an item")
+    public void iRemoveAnItem() {
+    }
+
+    @Then("the correct item is removed")
+    public void theCorrectItemIsRemoved() {
+    }
+
+    @Then("the total cost is correctly updated")
+    public void theTotalCostIsCorrectlyUpdated() {
     }
 
     @After
-    public void teardownAll() {
+    public void teardownAll(){
         webDriver.close();
-        webDriver.quit();
-
+        service.stop();
     }
 }
