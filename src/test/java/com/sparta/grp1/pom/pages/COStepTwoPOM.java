@@ -6,6 +6,6 @@ public class COStepTwoPOM extends AbstractPOM{
     private WebDriver webDriver;
 
     public COStepTwoPOM(WebDriver webDriver) {
-        this.webDriver = webDriver;
+        setWebDriver(webDriver);
     }
 }
