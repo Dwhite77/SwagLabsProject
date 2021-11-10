@@ -11,7 +11,6 @@ Feature: Clicking on product should open the expanded product page
       |product_id | url_id|
       |   2       |   2   |
       |   1       |   1   |
-      |   6       |   6   |
       |   5       |   5   |
       |   3       |   3   |
 
@@ -24,6 +23,5 @@ Feature: Clicking on product should open the expanded product page
       |product_id | url_id|
       |   2       |   2   |
       |   1       |   1   |
-      |   6       |   6   |
       |   5       |   5   |
       |   3       |   3   |

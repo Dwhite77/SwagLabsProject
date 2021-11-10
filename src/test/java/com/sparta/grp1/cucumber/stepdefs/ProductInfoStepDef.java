@@ -26,7 +26,7 @@ public class ProductInfoStepDef {
     @Before
     public void init() {
         ChromeOptions chromeOptions = new ChromeOptions()
-                //.addArguments("--headless")
+                .addArguments("--headless")
                 .addArguments("--window-size=1265,1380");
         DriverUtil.setDriverLocation(DRIVER_LOCATION);
         service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
@@ -65,8 +65,9 @@ public class ProductInfoStepDef {
 
     @After
     public void teardownAll() {
+        webDriver.close();
         service.stop();
-        webDriver.quit();
+        //webDriver.quit();
     }
 
     @And("Go back to products page")
