@@ -7,6 +7,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.io.IOException;
+
+
 public class AllItemsOrderingStepdefs {
 
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
@@ -14,6 +23,20 @@ public class AllItemsOrderingStepdefs {
 
     @Before
     public void initAll(){
+        DriverUtil.setDriverLocation(DRIVER_LOCATION);
+        service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
+        try {
+            service.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        //chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--window-size=1265,1380");
+        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
+        loginPOM = new LoginPOM(webDriver);
+        productsPOM = new ProductsPOM(webDriver);
     }
 
 
@@ -31,10 +54,13 @@ public class AllItemsOrderingStepdefs {
 
     @And("Click Name\\(A-Z)")
     public void clickNameAZ() {
+        productsPOM.clickName();
+
     }
 
     @Then("The item ordering should be A-Z")
     public void theItemOrderingShouldBeAZ() {
+        Assertions.assertEquals("https://www.saucedemo.com/inventory.html", productsPOM.getPageURL());
     }
 
     @And("The ordering is Z-A")

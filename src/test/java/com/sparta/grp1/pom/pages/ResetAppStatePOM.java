@@ -3,12 +3,12 @@ package com.sparta.grp1.pom.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ResetAppStatePOM {
+public class ResetAppStatePOM extends AbstractPOM{
 
     private WebDriver webDriver;
 
     public ResetAppStatePOM(WebDriver webDriver){
-        this.webDriver = webDriver;
+        setWebDriver(webDriver);
     }
 
     public boolean checkIfAppStateWasReset(){
