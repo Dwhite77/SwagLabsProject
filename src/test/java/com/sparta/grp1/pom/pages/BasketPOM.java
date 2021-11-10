@@ -8,22 +8,22 @@ public class BasketPOM extends AbstractPOM{
 
     public BasketPOM(WebDriver webDriver){
         this.webDriver = webDriver;
-        goToBasketpage();
+        goToBasketPage();
     }
 
-    public void goToBasketpage(){
+    public void goToBasketPage(){
         webDriver.get("https://www.saucedemo.com/cart.html");
     }
 
-//    // work in progress
-//    public boolean goToCheckoutPage(){
-//        webDriver.findElement(By.id("checkout")).click();
-//        return getPageURL().equals("https://www.saucedemo.com/checkout-step-one.html");
-//    }
-//
-//    public boolean goToProductsPage(){
-//        webDriver.findElement(By.id("continue-shopping")).click();
-//        return getPageURL().equals("https://www.saucedemo.com/inventory.html");
-//    }
+    // work in progress
+    public boolean goToCheckoutPage(){
+        webDriver.findElement(By.id("checkout")).click();
+        return getPageURL().equals("https://www.saucedemo.com/checkout-step-one.html");
+    }
+
+    public boolean goToProductsPage(){
+        webDriver.findElement(By.id("continue-shopping")).click();
+        return getPageURL().equals("https://www.saucedemo.com/inventory.html");
+    }
 
 }
