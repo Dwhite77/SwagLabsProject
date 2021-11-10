@@ -22,7 +22,6 @@ public class ProductInfoStepDef {
     private ChromeDriverService service;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
-
     @Before
     public void init() {
         ChromeOptions chromeOptions = new ChromeOptions()

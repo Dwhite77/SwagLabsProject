@@ -3,15 +3,24 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-10T13:24:51.256Z",
+        "start_timestamp": "2021-11-10T17:22:00.656Z",
         "before": [
           {
             "result": {
-              "duration": 997400,
+              "duration": 1002500,
               "status": "passed"
             },
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3765089400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
             }
           }
         ],
@@ -20,6 +29,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-name(a-z)-when-the-ordering-is-already-a-z-will-keep-the-current-ordering",
         "after": [
+          {
+            "result": {
+              "duration": 77996900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -34,6 +52,7 @@
         "steps": [
           {
             "result": {
+              "duration": 997700,
               "status": "passed"
             },
             "line": 4,
@@ -45,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 997700,
+              "duration": 998200,
               "status": "passed"
             },
             "line": 5,
@@ -68,7 +87,6 @@
           },
           {
             "result": {
-              "duration": 997300,
               "status": "passed"
             },
             "line": 7,
@@ -97,7 +115,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.301Z",
+        "start_timestamp": "2021-11-10T17:22:04.553Z",
         "before": [
           {
             "result": {
@@ -106,6 +124,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1091908700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 11,
@@ -113,6 +140,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-name(a-z)-when-the-ordering-is-not-a-z-will-change-the-ordering-to-a-z",
         "after": [
+          {
+            "result": {
+              "duration": 83252000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -138,6 +174,7 @@
           },
           {
             "result": {
+              "duration": 999600,
               "status": "passed"
             },
             "line": 13,
@@ -188,7 +225,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.309Z",
+        "start_timestamp": "2021-11-10T17:22:05.737Z",
         "before": [
           {
             "result": {
@@ -197,6 +234,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1172312000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 19,
@@ -204,6 +250,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-name(z-a)-when-the-ordering-is-not-z-a-will-change-the-ordering-to-z-a",
         "after": [
+          {
+            "result": {
+              "duration": 69998400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -240,7 +295,6 @@
           },
           {
             "result": {
-              "duration": 997400,
               "status": "passed"
             },
             "line": 22,
@@ -280,7 +334,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.317Z",
+        "start_timestamp": "2021-11-10T17:22:06.986Z",
         "before": [
           {
             "result": {
@@ -289,6 +343,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1041757000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 27,
@@ -296,6 +359,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-name(z-a)-when-the-ordering-is-z-a-will-keep-the-current-ordering",
         "after": [
+          {
+            "result": {
+              "duration": 85045700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -371,7 +443,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.324Z",
+        "start_timestamp": "2021-11-10T17:22:08.118Z",
         "before": [
           {
             "result": {
@@ -380,6 +452,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1046712400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 35,
@@ -387,6 +468,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-price(l-h)-when-the-ordering-is-a-z-will-change-the-ordering-to-price(l-h)",
         "after": [
+          {
+            "result": {
+              "duration": 70999400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -462,7 +552,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.329Z",
+        "start_timestamp": "2021-11-10T17:22:09.241Z",
         "before": [
           {
             "result": {
@@ -471,6 +561,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1167063600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 43,
@@ -478,6 +577,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-price(l-h)-when-the-ordering-is-already-price(l-h)-will-keep-the-current-ordering",
         "after": [
+          {
+            "result": {
+              "duration": 56008900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -553,7 +661,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.334Z",
+        "start_timestamp": "2021-11-10T17:22:10.470Z",
         "before": [
           {
             "result": {
@@ -562,6 +670,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1025960700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 51,
@@ -569,6 +686,15 @@
         "description": "",
         "id": "ability-to-order-items-on-page;choosing-price(h-l)-when-the-ordering-is-a-z-will-change-the-ordering-to-price(h-l)",
         "after": [
+          {
+            "result": {
+              "duration": 63004200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -605,7 +731,6 @@
           },
           {
             "result": {
-              "duration": 995800,
               "status": "passed"
             },
             "line": 54,
@@ -645,7 +770,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.341Z",
+        "start_timestamp": "2021-11-10T17:22:11.563Z",
         "before": [
           {
             "result": {
@@ -653,6 +778,15 @@
             },
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1012913300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
             }
           }
         ],
@@ -663,7 +797,15 @@
         "after": [
           {
             "result": {
-              "duration": 996100,
+              "duration": 76008400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
               "status": "passed"
             },
             "match": {
@@ -756,7 +898,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.370Z",
+        "start_timestamp": "2021-11-10T17:22:12.682Z",
         "before": [
           {
             "result": {
@@ -765,6 +907,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1001424400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 5,
@@ -772,6 +923,15 @@
         "description": "",
         "id": "ability-to-login;standard-user-tries-to-login",
         "after": [
+          {
+            "result": {
+              "duration": 72057600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -813,7 +973,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.397Z",
+        "start_timestamp": "2021-11-10T17:22:13.767Z",
         "before": [
           {
             "result": {
@@ -822,6 +982,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1051988100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 9,
@@ -829,6 +998,15 @@
         "description": "",
         "id": "ability-to-login;locked-out-user-tries-to-login",
         "after": [
+          {
+            "result": {
+              "duration": 65007900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -870,7 +1048,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.403Z",
+        "start_timestamp": "2021-11-10T17:22:14.894Z",
         "before": [
           {
             "result": {
@@ -879,6 +1057,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1019051400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 13,
@@ -886,6 +1073,15 @@
         "description": "",
         "id": "ability-to-login;problem-user-tries-to-login",
         "after": [
+          {
+            "result": {
+              "duration": 60000400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -927,7 +1123,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.413Z",
+        "start_timestamp": "2021-11-10T17:22:15.979Z",
         "before": [
           {
             "result": {
@@ -936,6 +1132,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1009590700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 17,
@@ -943,6 +1148,15 @@
         "description": "",
         "id": "ability-to-login;performance-glitch-user-tries-to-login",
         "after": [
+          {
+            "result": {
+              "duration": 77006800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -984,14 +1198,24 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.418Z",
+        "start_timestamp": "2021-11-10T17:22:17.070Z",
         "before": [
           {
             "result": {
+              "duration": 1000200,
               "status": "passed"
             },
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1033075900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
             }
           }
         ],
@@ -1000,6 +1224,15 @@
         "description": "",
         "id": "ability-to-login;user-enters-an-incorrect-username-or-password",
         "after": [
+          {
+            "result": {
+              "duration": 76013500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -1041,7 +1274,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.424Z",
+        "start_timestamp": "2021-11-10T17:22:18.184Z",
         "before": [
           {
             "result": {
@@ -1050,6 +1283,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1019950200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 25,
@@ -1057,6 +1299,15 @@
         "description": "",
         "id": "ability-to-login;user-enters-no-username-or-password",
         "after": [
+          {
+            "result": {
+              "duration": 120996800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -1080,6 +1331,7 @@
           },
           {
             "result": {
+              "duration": 1000500,
               "status": "skipped"
             },
             "line": 27,
@@ -1119,7 +1371,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.431Z",
+        "start_timestamp": "2021-11-10T17:22:19.329Z",
         "before": [
           {
             "result": {
@@ -1128,6 +1380,15 @@
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
             }
+          },
+          {
+            "result": {
+              "duration": 1126812800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
           }
         ],
         "line": 6,
@@ -1135,6 +1396,15 @@
         "description": "",
         "id": "ability-to-logout;the-user-wants-to-log-out",
         "after": [
+          {
+            "result": {
+              "duration": 81997200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -1179,6 +1449,1424 @@
     "line": 1,
     "elements": [
       {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:20.546Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1181034900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 71999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39001000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"2\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5999100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15001000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:21.866Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1188351100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 129296200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44998800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"1\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3001500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:23.249Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1038233400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 53181500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40997700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"3\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2998700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13003100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:24.401Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1142068200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 54008600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 55003100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"0\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3998600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11999200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:25.671Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1015969000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 50912000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50999600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"4\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3998900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15001000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:26.811Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1154721200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Navigating to the product info page via name tag",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-name-tag;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 67006200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40999800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the product \"5\" name tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 23
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheProductNameTag(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will go to the products info page for \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12001900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:28.092Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1160504800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 66030000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 57011700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2971200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19001700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:29.402Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999545900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 75994500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36998400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2998000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14005200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:30.535Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001999100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 60005700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 39001600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13002400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:31.654Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1749504800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 57997400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43018200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2980300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12001000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:33.525Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1151256200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 56997300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3997100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14002100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on the products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T17:22:34.798Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1174036600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Navigating to the product info page via image",
+        "description": "",
+        "id": "clicking-on-product-should-open-the-expanded-product-page;navigating-to-the-product-info-page-via-image;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 57008800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 45002600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on the image for product \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iClickOnTheImageForProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3001000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I will go to the products info page for \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.iWillGoToTheProductsInfoPageFor(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11998800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Go back to products page",
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.goBackToProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Clicking on product should open the expanded product page",
+    "description": "",
+    "id": "clicking-on-product-should-open-the-expanded-product-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/productInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
         "line": 3,
         "name": "User accesses the nav bar",
         "description": "",
@@ -1206,15 +2894,23 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-10T13:24:51.442Z",
+        "start_timestamp": "2021-11-10T17:22:36.096Z",
         "before": [
           {
             "result": {
-              "duration": 997300,
               "status": "passed"
             },
             "match": {
               "location": "com.sparta.grp1.cucumber.stepdefs.AllItemsOrderingStepdefs.initAll()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1178463500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.init()"
             }
           }
         ],
@@ -1223,6 +2919,15 @@
         "description": "",
         "id": "resetting-the-app-state;the-user-wants-to-reset-the-app-state",
         "after": [
+          {
+            "result": {
+              "duration": 60999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sparta.grp1.cucumber.stepdefs.ProductInfoStepDef.teardownAll()"
+            }
+          },
           {
             "result": {
               "status": "passed"
@@ -1237,6 +2942,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1001000,
               "status": "skipped"
             },
             "line": 8,

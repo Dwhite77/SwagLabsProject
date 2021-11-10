@@ -11,8 +11,10 @@ Feature: Clicking on product should open the expanded product page
       |product_id | url_id|
       |   2       |   2   |
       |   1       |   1   |
-      |   5       |   5   |
       |   3       |   3   |
+      |   0       |   0   |
+      |   4       |   4   |
+      |   5       |   5   |
 
   Scenario Outline: Navigating to the product info page via image
     When I click on the image for product "<product_id>"
@@ -23,5 +25,7 @@ Feature: Clicking on product should open the expanded product page
       |product_id | url_id|
       |   2       |   2   |
       |   1       |   1   |
-      |   5       |   5   |
       |   3       |   3   |
+      |   0       |   0   |
+      |   4       |   4   |
+      |   5       |   5   |
