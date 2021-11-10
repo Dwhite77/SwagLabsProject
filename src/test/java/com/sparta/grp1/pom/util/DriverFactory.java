@@ -48,6 +48,6 @@ public class DriverFactory {
                 webDriver = new SafariDriver();
                 break;
         }return webDriver;
-        }
+    }
 
 }
