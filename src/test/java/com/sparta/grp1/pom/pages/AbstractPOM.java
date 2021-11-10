@@ -4,17 +4,17 @@ import org.openqa.selenium.WebDriver;
 
 public class AbstractPOM {
 
-    private WebDriver webDriver;
+    private static WebDriver webDriver;
 
     public void setWebDriver(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    public WebDriver getWebDriver() {
+    public static WebDriver getWebDriver() {
         return webDriver;
     }
 
-    public String getPageURL(){
+    public static String getPageURL(){
        return webDriver.getCurrentUrl();
     }
 
