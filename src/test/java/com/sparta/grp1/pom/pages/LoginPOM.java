@@ -40,6 +40,12 @@ public class LoginPOM extends AbstractPOM{
         getWebDriver().findElement(By.id("user-name")).sendKeys(getUserName(userName)); //may need to press login button instead
         getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
         return new ProductsPOM(getWebDriver());
+
+    }
+
+    public boolean loginSuccessful(){
+        return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/inventory.html");
+
     }
 
     public boolean invalidLogin(){
