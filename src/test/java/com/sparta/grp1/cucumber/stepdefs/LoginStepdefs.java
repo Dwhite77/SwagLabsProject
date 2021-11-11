@@ -22,6 +22,7 @@ public class LoginStepdefs {
     private WebDriver webDriver;
     private LoginPOM loginPOM;
 
+    /*
     @Before
     public void initAll() {
         DriverUtil.setDriverLocation(DRIVER_LOCATION);
@@ -40,6 +41,8 @@ public class LoginStepdefs {
 
 
     }
+
+     */
 
     @When("Standard user enters the correct username and password")
     public void standardUserEntersTheCorrectUsernameAndPassword() {
@@ -79,11 +82,14 @@ public class LoginStepdefs {
     public void userEntersNoIncorrectUsernameOrPassword() {
     }
 
+    /*
     @After
     public void teardownAll() {
         webDriver.close();
         webDriver.quit();
     }
+
+     */
 
 
 }

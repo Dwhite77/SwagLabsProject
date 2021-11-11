@@ -1,16 +1,14 @@
 package com.sparta.grp1.pom.pages;
 
+import com.sparta.grp1.cucumber.stepdefs.SepDefStateManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
-public class ProductsPOM extends AbstractPOM{
+public class ProductsPOM extends SepDefStateManager {
 
     public enum ORDERVALUES{
         AZ, ZA, LOHI, HILO
