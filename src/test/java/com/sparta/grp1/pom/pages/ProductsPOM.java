@@ -18,10 +18,9 @@ public class ProductsPOM {
 
 
 
-//    public BasketPOM goToBasketPage(){
-//        getWebDriver().findElement(By.cssSelector(".shopping_cart_link")).click();
-//        return new BasketPOM(getWebDriver());
-//    }
+    public void goToBasketPage(){
+        webDriver.findElement(By.cssSelector(".shopping_cart_link")).click();
+    }
 
     public void openDropDown(){
         webDriver.findElement(By.className("product_sort_container")).click();
