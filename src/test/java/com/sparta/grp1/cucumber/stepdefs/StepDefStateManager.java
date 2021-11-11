@@ -21,6 +21,7 @@ public class StepDefStateManager {
     private static WebDriver webDriver;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
     private static ChromeDriverService service;
+    private static BasketPOM basketPOM;
 
 
     public void setWebDriver(WebDriver webDriver) {
@@ -37,6 +38,14 @@ public class StepDefStateManager {
 
     public String getBaseURL() {
         return "https://www.saucedemo.com/";
+    }
+
+    public static BasketPOM getBasketPOM() {
+        return basketPOM;
+    }
+
+    public static void setBasketPOM() {
+        StepDefStateManager.basketPOM = new BasketPOM(webDriver);
     }
 
     public enum userName{

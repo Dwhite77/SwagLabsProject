@@ -17,13 +17,16 @@ import java.io.IOException;
 
 public class BasketFunctStepdefs {
 
-    private WebDriver webDriver;
-    private ChromeDriverService service;
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+    private StepDefStateManager stepDefStateManager;
+
+    public BasketFunctStepdefs(StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
+    }
 
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
+        stepDefStateManager.setBasketPOM();
     }
 
     @When("I view my items")
