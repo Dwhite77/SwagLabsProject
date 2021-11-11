@@ -26,23 +26,6 @@ public class AllItemsOrderingStepdefs {
     private LoginPOM loginPOM;
     private ProductsPOM productsPOM;
 
-    @Before
-    public void initAll(){
-        DriverUtil.setDriverLocation(DRIVER_LOCATION);
-        service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        ChromeOptions chromeOptions = new ChromeOptions();
-        //chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--window-size=1265,1380");
-        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
-        loginPOM = new LoginPOM(webDriver);
-        productsPOM = new ProductsPOM(webDriver);
-    }
 
 
     @Given("I am on the all items page")
@@ -65,6 +48,7 @@ public class AllItemsOrderingStepdefs {
 
     @Then("The item ordering should be A-Z")
     public void theItemOrderingShouldBeAZ() {
+        productsPOM.getOrder();
         Assertions.assertEquals("https://www.saucedemo.com/inventory.html", productsPOM.getPageURL());
     }
     //-----------------------------------------------
@@ -104,10 +88,5 @@ public class AllItemsOrderingStepdefs {
     public void theOrderingIsPriceHL() {
     }
 
-    @After
-    public void teardownAll(){
-        webDriver.close();
-        webDriver.quit();
-    }
 
 }

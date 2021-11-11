@@ -21,26 +21,7 @@ public class BasketFunctStepdefs {
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
 
-    @Before
-    public void init() {
-        ChromeOptions chromeOptions = new ChromeOptions()
-                .addArguments("--headless")
-                .addArguments("--window-size=1265,1380");
-        DriverUtil.setDriverLocation(DRIVER_LOCATION);
-        service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
-        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME,service, chromeOptions);
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        //login to get to products page
-        webDriver.get("https://www.saucedemo.com/");
-        webDriver.findElement(By.id("user-name")).sendKeys("standard_user");
-        webDriver.findElement(By.id("password")).sendKeys("secret_sauce");
-        webDriver.findElement(By.id("login-button")).click();
-    }
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
@@ -74,9 +55,5 @@ public class BasketFunctStepdefs {
     public void theTotalCostIsCorrectlyUpdated() {
     }
 
-    @After
-    public void teardownAll(){
-        webDriver.close();
-        service.stop();
-    }
+
 }
