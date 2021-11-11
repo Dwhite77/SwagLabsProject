@@ -1,5 +1,6 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
+import com.sparta.grp1.pom.pages.ProductInfoPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
@@ -20,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ProductInfoStepDef {
     private WebDriver webDriver;
     private ChromeDriverService service;
+    private static ProductInfoPOM productInfoPOM;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
     @Before
@@ -35,42 +37,38 @@ public class ProductInfoStepDef {
             e.printStackTrace();
         }
         webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME,service, chromeOptions);
+
+        productInfoPOM = new ProductInfoPOM(webDriver);
         //login to get to products page
-        webDriver.get("https://www.saucedemo.com/");
-        webDriver.findElement(By.id("user-name")).sendKeys("standard_user");
-        webDriver.findElement(By.id("password")).sendKeys("secret_sauce");
-        webDriver.findElement(By.id("login-button")).click();
+        productInfoPOM.loginToPage("standard_user");
     }
 
     @Given("I am on the products page")
-    public void iAmOnTheProductsPage() {
-        //assertEquals("https://www.saucedemo.com/inventory.html", webDriver.getCurrentUrl());
-    }
+    public void iAmOnTheProductsPage() { }
 
     @When("I click on the product {string} name tag")
     public void iClickOnTheProductNameTag(String arg0) {
-        webDriver.findElement(By.id("item_"+arg0+"_title_link")).click();
+        productInfoPOM.clickOnProductName(arg0);
     }
 
     @Then("I will go to the products info page for {string}")
     public void iWillGoToTheProductsInfoPageFor(String arg0) {
-        assertEquals("https://www.saucedemo.com/inventory-item.html?id="+arg0, webDriver.getCurrentUrl());
+        assertTrue(productInfoPOM.isOnProductInfoPage(arg0));
     }
 
     @When("I click on the image for product {string}")
     public void iClickOnTheImageForProduct(String arg0) {
-        webDriver.findElement(By.id("item_"+arg0+"_img_link")).click();
+        productInfoPOM.clickOnProductPhoto(arg0);
     }
 
     @And("Go back to products page")
     public void goBackToProductsPage() {
-        webDriver.navigate().back();
+        productInfoPOM.getWebDriver().navigate().back();
     }
 
     @After
     public void teardownAll() {
-        webDriver.close();
-        webDriver.quit();
-
+        productInfoPOM.getWebDriver().close();
+        productInfoPOM.getWebDriver().quit();
     }
 }
