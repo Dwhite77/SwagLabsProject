@@ -17,8 +17,11 @@ import java.io.IOException;
 
 public class BasketNavStepdefs {
 
+    private StepDefStateManager stepDefStateManager;
 
-
+    public BasketNavStepdefs(StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
+    }
 
     @When("I click the checkout link")
     public void iClickTheCheckoutLink() {
@@ -26,7 +29,7 @@ public class BasketNavStepdefs {
 
     @Then("I go to the checkout page")
     public void iGoToTheCheckoutPage() {
-        Assertions.assertTrue(basketPOM.hasCheckoutPageLink());
+        Assertions.assertTrue(StepDefStateManager.getBasketPOM().hasCheckoutPageLink());
     }
 
     @When("I click the continue shopping link")
@@ -35,7 +38,7 @@ public class BasketNavStepdefs {
 
     @Then("I go back to the products page")
     public void iGoBackToTheProductsPage() {
-        Assertions.assertTrue(basketPOM.hasProductPageLink());
+        Assertions.assertTrue(StepDefStateManager.getBasketPOM().hasProductPageLink());
     }
 
     @When("I click the item link")

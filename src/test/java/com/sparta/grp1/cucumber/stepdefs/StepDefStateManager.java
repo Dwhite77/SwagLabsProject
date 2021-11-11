@@ -1,5 +1,6 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
+import com.sparta.grp1.pom.pages.BasketPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
@@ -15,6 +16,7 @@ public class StepDefStateManager {
     private WebDriver webDriver;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
     private static ChromeDriverService service;
+    private static BasketPOM basketPOM;
 
     public void setWebDriver(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -30,6 +32,14 @@ public class StepDefStateManager {
 
     public String getBaseURL() {
         return "https://www.saucedemo.com/";
+    }
+
+    public static BasketPOM getBasketPOM() {
+        return basketPOM;
+    }
+
+    public static void setBasketPOM(BasketPOM basketPOM) {
+        StepDefStateManager.basketPOM = basketPOM;
     }
 
     @Before

@@ -17,15 +17,15 @@ import java.io.IOException;
 
 public class BasketFunctStepdefs {
 
+    private StepDefStateManager stepDefStateManager;
 
-    private static BasketPOM basketPOM;
-
-    public BasketFunctStepdefs() {
+    public BasketFunctStepdefs(StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
     }
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
-        basketPOM = new BasketPOM(BasketPOM.getWebDriver());
+        stepDefStateManager.setBasketPOM(new BasketPOM(stepDefStateManager.getWebDriver()));
     }
 
     @When("I view my items")

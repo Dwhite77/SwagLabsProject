@@ -5,9 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class BasketPOM extends StepDefStateManager {
+    private WebDriver webDriver;
 
     public BasketPOM(WebDriver webDriver){
-        setWebDriver(webDriver);
+        this.webDriver = webDriver;
         goToBasketPage();
     }
 
