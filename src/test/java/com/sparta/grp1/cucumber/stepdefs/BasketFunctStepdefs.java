@@ -20,6 +20,8 @@ public class BasketFunctStepdefs {
 
     private static BasketPOM basketPOM;
 
+    public BasketFunctStepdefs() {
+    }
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {

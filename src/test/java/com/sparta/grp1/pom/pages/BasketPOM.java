@@ -24,7 +24,17 @@ public class BasketPOM extends AbstractPOM{
         return new ProductsPOM(getWebDriver());
     }
 
-    public 
+    private void addItemToBasket(){
+        ProductsPOM productsPOM = new ProductsPOM(getWebDriver());
+        getWebDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+
+    }
+
+    public ProductInfoPOM goToItemPage(){
+        String itemName;
+        getWebDriver().findElement(By.id("item_4_title_link")).click();
+        return new ProductInfoPOM(getWebDriver());
+    }
 
 
 
