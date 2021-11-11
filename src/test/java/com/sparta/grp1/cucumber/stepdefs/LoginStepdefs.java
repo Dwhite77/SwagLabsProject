@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginStepdefs {
 
     private static LoginPOM loginPOM;
+    private static LogoutPOM logoutPOM;
     private StepDefStateManager stepDefStateManager;
     private static LogoutPOM logoutPOM;
 
@@ -26,9 +27,11 @@ public class LoginStepdefs {
 
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
+
         loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
         logoutPOM =new LogoutPOM(stepDefStateManager.getWebDriver());
         logoutPOM.loggingOut();
+
     }
 
     @When("Standard user enters the correct username and password")

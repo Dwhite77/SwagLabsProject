@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 
 public class COCompleteDisplayStepdefs {
 
+
     private StepDefStateManager stepDefStateManager;
     private static COCompletePOM coCompletePOM;
 
@@ -19,6 +20,7 @@ public class COCompleteDisplayStepdefs {
         coCompletePOM = new COCompletePOM(stepDefStateManager.getWebDriver());
         coCompletePOM.goToCompleteCheckoutPage();
     }
+
 
     @When("I am viewing the page")
     public void iAmViewingThePage() {

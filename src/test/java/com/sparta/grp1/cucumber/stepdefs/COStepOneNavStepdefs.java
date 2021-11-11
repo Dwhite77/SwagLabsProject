@@ -6,12 +6,14 @@ import io.cucumber.java.en.When;
 
 public class COStepOneNavStepdefs {
 
+
     private StepDefStateManager stepDefStateManager;
     private static COStepOnePOM coStepOnePOM;
 
     public COStepOneNavStepdefs(StepDefStateManager stepDefStateManager){
         this.stepDefStateManager = stepDefStateManager;
     }
+
 
     @When("I enter all the valid information")
     public void userEnterAllTheValidInformation() {

@@ -8,7 +8,7 @@ Feature: Navigation checkout: Overview page
   Then I go to the order completion page
 
   Scenario: Canceling an checkout process
-  Given I am on the checkout: overview
+  Given I am on the checkout: overview page
   When I click the cancel link
   Then I go back to the product page
 

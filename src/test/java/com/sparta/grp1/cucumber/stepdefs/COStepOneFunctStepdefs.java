@@ -1,6 +1,7 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
 import com.sparta.grp1.pom.pages.COStepOnePOM;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,10 +10,12 @@ import io.cucumber.java.en.When;
 
 public class COStepOneFunctStepdefs {
 
+
     private StepDefStateManager stepDefStateManager;
     private static COStepOnePOM coStepOnePOM;
 
     public COStepOneFunctStepdefs(StepDefStateManager stepDefStateManager){
+
         this.stepDefStateManager = stepDefStateManager;
     }
 
