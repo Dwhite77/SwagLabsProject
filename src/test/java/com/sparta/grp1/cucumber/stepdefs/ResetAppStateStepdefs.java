@@ -21,7 +21,7 @@ public class ResetAppStateStepdefs {
     public void theUserIsLoggedInWithOneItemInTheBasket() {
         loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
         resetAppStatePOM = new ResetAppStatePOM(stepDefStateManager.getWebDriver());
-        loginPOM.loginToProductsPage(LoginPOM.userName.STANDARD_USER);
+        //loginPOM.loginToProductsPage(LoginPOM.userName.STANDARD_USER);
         resetAppStatePOM.userAddsItemToBasket();
 
     }
