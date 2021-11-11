@@ -8,9 +8,7 @@ import io.cucumber.java.en.When;
 
 public class LogoutStepdefs {
 
-    @Before
-    public void initAll(){
-    }
+
 
     @Given(": The user is logged in")
     public void theUserIsLoggedIn() {
@@ -24,7 +22,5 @@ public class LogoutStepdefs {
     public void theUserShouldBeDirectedToTheLoginPage() {
     }
 
-    @After
-    public void teardownAll(){
-    }
+
 }

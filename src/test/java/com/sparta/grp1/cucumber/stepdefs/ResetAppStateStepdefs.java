@@ -8,9 +8,6 @@ import io.cucumber.java.en.When;
 
 public class ResetAppStateStepdefs {
 
-    @Before
-    public void initAll(){
-    }
 
     @And(": The user has at least {int} item in the basket")
     public void theUserHasAtLeastItemInTheBasket(int arg0) {
@@ -24,8 +21,5 @@ public class ResetAppStateStepdefs {
     public void theBasketWillBeEmpty() {
     }
 
-    @After
-    public void teardownAll(){
-    }
 
 }
