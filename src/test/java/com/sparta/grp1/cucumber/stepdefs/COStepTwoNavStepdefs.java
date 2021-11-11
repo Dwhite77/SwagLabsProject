@@ -19,8 +19,8 @@ public class COStepTwoNavStepdefs {
         this.stepDefStateManager = stepDefStateManager;
     }
 
-    @Given("I am on the checkout: overview page")
-    public void iAmOnTheCheckoutOverviewPage() {
+    @Given("I am on the checkout: overview page s2")
+    public void iAmOnTheCheckoutOverviewPageS2() {
         coStepTwoPOM = new COStepTwoPOM(stepDefStateManager.getWebDriver());
         coStepTwoPOM.goToStep2Page();
     }
