@@ -17,11 +17,7 @@ import java.io.IOException;
 
 public class BasketNavStepdefs {
 
-    private WebDriver webDriver;
-    private ChromeDriverService service;
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
-    private BasketPOM basketPOM;
 
 
     @When("I click the checkout link")
@@ -30,7 +26,7 @@ public class BasketNavStepdefs {
 
     @Then("I go to the checkout page")
     public void iGoToTheCheckoutPage() {
-        Assertions.assertTrue(basketPOM.goToCheckoutPage());
+        Assertions.assertTrue(basketPOM.hasCheckoutPageLink());
     }
 
     @When("I click the continue shopping link")
@@ -39,7 +35,7 @@ public class BasketNavStepdefs {
 
     @Then("I go back to the products page")
     public void iGoBackToTheProductsPage() {
-        Assertions.assertTrue(basketPOM.goToProductsPage());
+        Assertions.assertTrue(basketPOM.hasProductPageLink());
     }
 
     @When("I click the item link")

@@ -14,15 +14,28 @@ public class BasketPOM extends AbstractPOM{
         getWebDriver().get("https://www.saucedemo.com/cart.html");
     }
 
-    // work in progress
-    public boolean goToCheckoutPage() {
+    public COStepOnePOM goToCheckoutPage() {
         getWebDriver().findElement(By.id("checkout")).click();
-        return getPageURL().equals("https://www.saucedemo.com/checkout-step-one.html");
+        return new COStepOnePOM(getWebDriver());
     }
 
-    public boolean goToProductsPage(){
+    public ProductsPOM goToProductsPage(){
         getWebDriver().findElement(By.id("continue-shopping")).click();
-        return getPageURL().equals("https://www.saucedemo.com/inventory.html");
+        return new ProductsPOM(getWebDriver());
+    }
+
+    public 
+
+
+
+    // -------------------------------- Helper Methods ---------------------------
+
+    public boolean hasCheckoutPageLink(){
+        return goToCheckoutPage().getPageURL().equals("https://www.saucedemo.com/cart.html");
+    }
+
+    public boolean hasProductPageLink(){
+        return goToProductsPage().getPageURL().equals("https://www.saucedemo.com/inventory.html");
     }
 
 }

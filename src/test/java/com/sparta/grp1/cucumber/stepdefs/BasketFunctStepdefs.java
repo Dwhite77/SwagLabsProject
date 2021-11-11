@@ -1,5 +1,6 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
+import com.sparta.grp1.pom.pages.BasketPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
@@ -16,15 +17,13 @@ import java.io.IOException;
 
 public class BasketFunctStepdefs {
 
-    private WebDriver webDriver;
-    private ChromeDriverService service;
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
-
+    private static BasketPOM basketPOM;
 
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
+        basketPOM = new BasketPOM(BasketPOM.getWebDriver());
     }
 
     @When("I view my items")

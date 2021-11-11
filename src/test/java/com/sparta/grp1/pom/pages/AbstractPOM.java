@@ -14,7 +14,7 @@ public class AbstractPOM {
         return webDriver;
     }
 
-    public static String getPageURL(){
+    public String getPageURL(){
        return webDriver.getCurrentUrl();
     }
 
