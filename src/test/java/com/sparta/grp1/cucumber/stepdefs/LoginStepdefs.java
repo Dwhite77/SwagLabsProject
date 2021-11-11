@@ -17,7 +17,7 @@ public class LoginStepdefs {
     private static LoginPOM loginPOM;
     private static LogoutPOM logoutPOM;
     private StepDefStateManager stepDefStateManager;
-    private static LogoutPOM logoutPOM;
+
 
 
 

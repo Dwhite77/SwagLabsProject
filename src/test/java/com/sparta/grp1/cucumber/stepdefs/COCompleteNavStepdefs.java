@@ -32,4 +32,8 @@ public class COCompleteNavStepdefs {
     public void iGoToTheProductPage() {
         coCompletePOM.productsPageFromComplete();
     }
+
+    @Given("I am on the checkout: overview")
+    public void iAmOnTheCheckoutOverview() {
+    }
 }
