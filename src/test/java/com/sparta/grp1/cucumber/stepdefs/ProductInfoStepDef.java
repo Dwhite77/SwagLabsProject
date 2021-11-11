@@ -42,6 +42,4 @@ public class ProductInfoStepDef {
     public void goBackToProductsPage() {
         productInfoPOM.goBack();
     }
-
-
 }
