@@ -30,7 +30,7 @@ public class COStepOneNavStepdefs {
         coStepOnePOM.clickCancel();
     }
 
-    @Then("user go back to the products page")
+    @Then("user go back to the basket page")
     public void userGoBackToTheBasketPage() {
         coStepOnePOM.userIsBackToBasketPage();
     }
