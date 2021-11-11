@@ -1,6 +1,7 @@
 Feature: Ability to login
 
   Background: Starting from the login page
+    Given I am on the login page
 
   Scenario: Standard user tries to login
     When  Standard user enters the correct username and password
@@ -22,10 +23,13 @@ Feature: Ability to login
     When  User enters the incorrect username or password
     Then  The user will be displayed an error message
 
-  Scenario: User enters no username or password
-    When  User enters no incorrect username or password
-    Then  The user will be displayed an error message
+  Scenario: User enters no username
+    When  User enters no username
+    Then  The user will be displayed a username error message
 
+  Scenario: User enters no password
+    When  User enters no password
+    Then  The user will be displayed a password error message
 
 
 
