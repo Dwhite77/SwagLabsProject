@@ -12,4 +12,4 @@ Feature: Navigation on checkout:Your Information
   Scenario: Navigating back to basket page
   Given I am on the checkout: your information page
   When I click the cancel link
-  Then I go back to the basket page
+  Then user go back to the products page
