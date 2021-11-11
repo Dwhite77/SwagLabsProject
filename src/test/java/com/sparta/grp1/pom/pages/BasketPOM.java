@@ -17,29 +17,30 @@ public class BasketPOM {
 
     }
 
-    public COStepOnePOM goToCheckoutPage() {
+    public void goToCheckoutPage() {
 //        System.out.println(w);
         webDriver.findElement(By.id("checkout")).click();
 //        System.out.println(getPageURL());
-        return new COStepOnePOM(webDriver);
+//        return new COStepOnePOM(webDriver);
     }
 
-    public ProductsPOM goToProductsPage(){
+    public void goToProductsPage(){
         webDriver.findElement(By.id("continue-shopping")).click();
-        return new ProductsPOM(webDriver);
+//        return new ProductsPOM(webDriver);
     }
 
-//    private void addItemToBasket(){
-//        ProductsPOM productsPOM = new ProductsPOM(getWebDriver());
-//        getWebDriver().findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-//
-//    }
+    private void addItemToBasket(){
+        ProductsPOM productsPOM = new ProductsPOM(webDriver);
+        goToProductsPage();
+        webDriver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        productsPOM.goToBasketPage();
+    }
 
-//    public ProductInfoPOM goToItemPage(){
-//        String itemName;
-//        getWebDriver().findElement(By.id("item_4_title_link")).click();
-//        return new ProductInfoPOM(getWebDriver());
-//    }
+    public void goToItemPage(){
+        String itemName;
+        addItemToBasket();
+        webDriver.findElement(By.id("item_4_title_link")).click();
+    }
 
 
 

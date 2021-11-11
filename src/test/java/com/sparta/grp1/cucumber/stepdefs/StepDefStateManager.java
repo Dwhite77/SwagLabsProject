@@ -18,7 +18,7 @@ import java.io.IOException;
 public class StepDefStateManager {
 
     //private static boolean initialized = false;
-    private WebDriver webDriver;
+    private static WebDriver webDriver;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
     private static ChromeDriverService service;
     private static BasketPOM basketPOM;

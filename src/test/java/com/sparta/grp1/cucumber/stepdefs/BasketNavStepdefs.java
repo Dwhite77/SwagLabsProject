@@ -29,8 +29,8 @@ public class BasketNavStepdefs {
 
     @Then("I go to the checkout page")
     public void iGoToTheCheckoutPage() {
-        System.out.println(stepDefStateManager.getPageURL());
-//        Assertions.assertTrue(StepDefStateManager.getBasketPOM().hasCheckoutPageLink());
+        StepDefStateManager.getBasketPOM().goToCheckoutPage();
+        Assertions.assertEquals("https://www.saucedemo.com/checkout-step-one.html", stepDefStateManager.getPageURL());
     }
 
     @When("I click the continue shopping link")
@@ -39,7 +39,8 @@ public class BasketNavStepdefs {
 
     @Then("I go back to the products page")
     public void iGoBackToTheProductsPage() {
-//        Assertions.assertTrue(StepDefStateManager.getBasketPOM().hasProductPageLink());
+        StepDefStateManager.getBasketPOM().goToProductsPage();
+        Assertions.assertEquals("https://www.saucedemo.com/inventory.html", stepDefStateManager.getPageURL());
     }
 
     @When("I click the item link")
@@ -48,6 +49,8 @@ public class BasketNavStepdefs {
 
     @Then("I go to the correct item page")
     public void iGoToTheCorrectItemPage() {
+        StepDefStateManager.getBasketPOM().goToItemPage();
+        Assertions.assertEquals("https://www.saucedemo.com/inventory-item.html?id=4", stepDefStateManager.getPageURL());
     }
 
 
