@@ -1,6 +1,7 @@
 package com.sparta.grp1.pom.pages;
 
 import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class COStepTwoPOM{
@@ -11,7 +12,9 @@ public class COStepTwoPOM{
     }
 
 
-
+//    public void goToProductsPage(){
+//        webDriver.findElement(By.id("cancel")).click();
+//    }
 
 
 }
