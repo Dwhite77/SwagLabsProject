@@ -12,7 +12,6 @@ public class ProductInfoPOM {
     }
 
     public void loginToPage(String username) {
-        webDriver.get("https://www.saucedemo.com/");
         webDriver.findElement(By.id("user-name")).sendKeys(username);
         webDriver.findElement(By.id("password")).sendKeys("secret_sauce");
         webDriver.findElement(By.id("login-button")).click();

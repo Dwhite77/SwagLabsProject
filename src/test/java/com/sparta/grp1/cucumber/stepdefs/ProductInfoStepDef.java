@@ -10,16 +10,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ProductInfoStepDef {
     private static ProductInfoPOM productInfoPOM;
-    private SepDefStateManager sepDefStateManager;
+    private StepDefStateManager stepDefStateManager;
 
-    // PicoContainer injects class ContextSteps
-    public ProductInfoStepDef (SepDefStateManager sepDefStateManager) {
-        this.sepDefStateManager = sepDefStateManager;
+    // PicoContainer injects class StepDefStateManager
+    public ProductInfoStepDef (StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
     }
 
     @Given("I am on the products page")
     public void iAmOnTheProductsPage() {
-        productInfoPOM = new ProductInfoPOM(sepDefStateManager.getWebDriver());
+        productInfoPOM = new ProductInfoPOM(stepDefStateManager.getWebDriver());
         //login to get to products page
         productInfoPOM.loginToPage("standard_user");
     }
