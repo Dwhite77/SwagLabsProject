@@ -20,7 +20,6 @@ public class LogoutStepdefs {
     public void theUserIsLoggedIn() {
         loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
         logoutPOM = new LogoutPOM(stepDefStateManager.getWebDriver());
-//        loginPOM.loginToProductsPage(LoginPOM.userName.STANDARD_USER);
     }
 
     @When(": The user clicks on the logout button")
