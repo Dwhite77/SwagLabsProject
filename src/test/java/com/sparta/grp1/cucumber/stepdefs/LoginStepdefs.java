@@ -23,7 +23,7 @@ public class LoginStepdefs {
 
         // add logout here
        loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
-       logoutPOM =new LogoutPOM(stepDefStateManager.getWebDriver());
+       logoutPOM = new LogoutPOM(stepDefStateManager.getWebDriver());
        logoutPOM.loggingOut();
     }
 
