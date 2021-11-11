@@ -1,6 +1,6 @@
 package com.sparta.grp1.pom.pages;
 
-import com.sparta.grp1.cucumber.stepdefs.SepDefStateManager;
+import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 
-public class ProductsPOM extends SepDefStateManager {
+public class ProductsPOM extends StepDefStateManager {
 
     public enum ORDERVALUES{
         AZ, ZA, LOHI, HILO

@@ -1,10 +1,10 @@
 package com.sparta.grp1.pom.pages;
 
-import com.sparta.grp1.cucumber.stepdefs.SepDefStateManager;
+import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BasketPOM extends SepDefStateManager {
+public class BasketPOM extends StepDefStateManager {
 
     public BasketPOM(WebDriver webDriver){
         setWebDriver(webDriver);
