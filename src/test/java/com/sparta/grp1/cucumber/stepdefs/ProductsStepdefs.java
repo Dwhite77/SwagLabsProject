@@ -2,35 +2,27 @@ package com.sparta.grp1.cucumber.stepdefs;
 
 import com.sparta.grp1.pom.pages.LoginPOM;
 import com.sparta.grp1.pom.pages.ProductsPOM;
-import com.sparta.grp1.pom.util.DriverFactory;
-import com.sparta.grp1.pom.util.DriverUtil;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.io.IOException;
 
 public class ProductsStepdefs {
 
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
-    private static ChromeDriverService service;
-    private WebDriver webDriver;
-    private LoginPOM loginPOM;
-    private ProductsPOM productsPOM;
+    private static ProductsPOM productsPOM;
+    private StepDefStateManager stepDefStateManager;
+
+    // PicoContainer injects class ContextSteps
+    public ProductsStepdefs (StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
+    }
 
 
 
     @Given("I am on the all items page")
     public void iAmOnTheAllItemsPage() {
-        loginPOM.loginToProductsPage(LoginPOM.userName.STANDARD_USER);
+        productsPOM = new ProductsPOM(stepDefStateManager.getWebDriver());
     }
 
     @And("The ordering is A-Z")
@@ -44,49 +36,61 @@ public class ProductsStepdefs {
 
     @And("Click Name\\(A-Z)")
     public void clickNameAZ() {
-        productsPOM.clickName();
+        productsPOM.clickName(0);
     }
 
     @Then("The item ordering should be A-Z")
     public void theItemOrderingShouldBeAZ() {
-        productsPOM.getOrder();
-        Assertions.assertEquals("https://www.saucedemo.com/inventory.html", productsPOM.getPageURL());
+        Assertions.assertEquals("ordering is A-Z", productsPOM.getOrder());
+
     }
     //-----------------------------------------------
     @And("The ordering is Z-A")
     public void theOrderingIsZA() {
+        productsPOM.openDropDown();
+        productsPOM.clickName(1);
     }
     //-----------------------------------------------
     @And("Click Name\\(Z-A)")
     public void clickNameZA() {
+        productsPOM.clickName(1);
     }
 
     @Then("The item ordering should be Z-A")
     public void theItemOrderingShouldBeZA() {
+        Assertions.assertEquals("ordering is Z-A", productsPOM.getOrder());
     }
     //-----------------------------------------------
     @And("Click Price\\(L-H)")
     public void clickPriceLH() {
+        productsPOM.clickName(2);
     }
 
     @Then("The item ordering should be Price\\(L-H)")
     public void theItemOrderingShouldBePriceLH() {
+        Assertions.assertEquals("ordering is L-H", productsPOM.getOrder());
     }
     //-----------------------------------------------
     @And("The ordering is Price\\(L-H)")
     public void theOrderingIsPriceLH() {
+        productsPOM.openDropDown();
+        productsPOM.clickName(2);
     }
 
     @And("Click Price\\(H-L)")
     public void clickPriceHL() {
+        productsPOM.clickName(3);
     }
 
     @Then("The item ordering should be Price\\(H-L)")
     public void theItemOrderingShouldBePriceHL() {
+        Assertions.assertEquals("ordering is H-L", productsPOM.getOrder());
     }
     //-----------------------------------------------
     @And("The ordering is Price\\(H-L)")
     public void theOrderingIsPriceHL() {
+        productsPOM.openDropDown();
+        productsPOM.clickName(3);
     }
 
 
