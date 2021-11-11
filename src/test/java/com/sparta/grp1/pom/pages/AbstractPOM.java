@@ -18,4 +18,8 @@ public class AbstractPOM {
        return webDriver.getCurrentUrl();
     }
 
+    public String getBaseURL() {
+        return "https://www.saucedemo.com/";
+    }
+
 }
