@@ -14,7 +14,6 @@ public class LogoutPOM {
         this.webDriver = webDriver;
     }
     public void loggingOut(){
-
         webDriver.findElement(By.className("bm-burger-button")).click();
         webDriver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
         webDriver.findElement(By.id("logout_sidebar_link")).click();
