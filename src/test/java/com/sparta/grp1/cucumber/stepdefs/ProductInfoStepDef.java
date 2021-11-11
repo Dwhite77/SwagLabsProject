@@ -5,22 +5,21 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.chrome.ChromeDriverService;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ProductInfoStepDef {
     private static ProductInfoPOM productInfoPOM;
-    private AbstractPOM abstractPOM;
+    private SepDefStateManager sepDefStateManager;
 
     // PicoContainer injects class ContextSteps
-    public ProductInfoStepDef (AbstractPOM abstractPOM) {
-        this.abstractPOM = abstractPOM;
+    public ProductInfoStepDef (SepDefStateManager sepDefStateManager) {
+        this.sepDefStateManager = sepDefStateManager;
     }
 
     @Given("I am on the products page")
     public void iAmOnTheProductsPage() {
-        productInfoPOM = new ProductInfoPOM(abstractPOM.getWebDriver());
+        productInfoPOM = new ProductInfoPOM(sepDefStateManager.getWebDriver());
         //login to get to products page
         productInfoPOM.loginToPage("standard_user");
     }
