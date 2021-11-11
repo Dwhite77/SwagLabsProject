@@ -8,6 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -31,31 +32,30 @@ public class BasketFunctStepdefs {
 
     @When("I view my items")
     public void iViewMyItems() {
+        StepDefStateManager.getBasketPOM().addItemToBasket();
     }
 
     @Then("I see the correct items")
     public void iSeeTheCorrectItems() {
-    }
-
-    @Then("I see the correct total")
-    public void iSeeTheCorrectTotal() {
+        Assertions.assertEquals("Sauce Labs Backpack", StepDefStateManager.getBasketPOM().lookForBasketInItem());
     }
 
     @Given("I am have items in the basket")
     public void iAmHaveItemsInTheBasket() {
+        stepDefStateManager.setBasketPOM();
+        StepDefStateManager.getBasketPOM().addItemToBasket();
     }
 
     @When("I remove an item")
     public void iRemoveAnItem() {
+        StepDefStateManager.getBasketPOM().removeBasketItem();
     }
 
     @Then("the correct item is removed")
     public void theCorrectItemIsRemoved() {
+        Assertions.assertEquals(0, StepDefStateManager.getBasketPOM().numberOfItemsInBasket());
     }
 
-    @Then("the total cost is correctly updated")
-    public void theTotalCostIsCorrectlyUpdated() {
-    }
 
 
 }
