@@ -1,5 +1,6 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
+import com.sparta.grp1.pom.pages.BasketPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
@@ -19,8 +20,6 @@ public class BasketFunctStepdefs {
     private WebDriver webDriver;
     private ChromeDriverService service;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
-
-
 
 
     @Given("I am on the basket page")
