@@ -2,6 +2,7 @@ package com.sparta.grp1.cucumber.stepdefs;
 
 import com.sparta.grp1.pom.pages.LoginPOM;
 
+import com.sparta.grp1.pom.pages.LogoutPOM;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +11,7 @@ import io.cucumber.java.en.When;
 public class LoginStepdefs {
 
     private static LoginPOM loginPOM;
+    private static LogoutPOM logoutPOM;
     private StepDefStateManager stepDefStateManager;
 
     public LoginStepdefs (StepDefStateManager stepDefStateManager) {
@@ -21,6 +23,8 @@ public class LoginStepdefs {
 
         // add logout here
        loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
+       logoutPOM =new LogoutPOM(stepDefStateManager.getWebDriver());
+       logoutPOM.loggingOut();
     }
 
     @When("Standard user enters the correct username and password")
