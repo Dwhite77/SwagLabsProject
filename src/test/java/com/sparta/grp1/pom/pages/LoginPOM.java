@@ -1,11 +1,11 @@
 package com.sparta.grp1.pom.pages;
 
-import com.sparta.grp1.cucumber.stepdefs.SepDefStateManager;
+import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPOM extends SepDefStateManager {
+public class LoginPOM extends StepDefStateManager {
 
     private By basketPage = new By.ById("shopping_cart_container");
 
