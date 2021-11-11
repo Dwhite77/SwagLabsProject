@@ -24,27 +24,14 @@ public class ProductInfoStepDef {
     private static ProductInfoPOM productInfoPOM;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
 
-    @Before
-    public void init() {
-        ChromeOptions chromeOptions = new ChromeOptions()
-                .addArguments("--headless")
-                .addArguments("--window-size=1265,1380");
-        DriverUtil.setDriverLocation(DRIVER_LOCATION);
-        service = DriverUtil.getChromeDriverService(DRIVER_LOCATION);
-        try {
-            service.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME,service, chromeOptions);
 
-        productInfoPOM = new ProductInfoPOM(webDriver);
+
+    @Given("I am on the products page")
+    public void iAmOnTheProductsPage() { 
+      productInfoPOM = new ProductInfoPOM(webDriver);
         //login to get to products page
         productInfoPOM.loginToPage("standard_user");
     }
-
-    @Given("I am on the products page")
-    public void iAmOnTheProductsPage() { }
 
     @When("I click on the product {string} name tag")
     public void iClickOnTheProductNameTag(String arg0) {
@@ -66,9 +53,5 @@ public class ProductInfoStepDef {
         productInfoPOM.getWebDriver().navigate().back();
     }
 
-    @After
-    public void teardownAll() {
-        productInfoPOM.getWebDriver().close();
-        productInfoPOM.getWebDriver().quit();
-    }
+
 }
