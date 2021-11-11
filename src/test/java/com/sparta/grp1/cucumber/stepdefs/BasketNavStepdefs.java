@@ -17,12 +17,11 @@ import java.io.IOException;
 
 public class BasketNavStepdefs {
 
-    private WebDriver webDriver;
-    private ChromeDriverService service;
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+    private StepDefStateManager stepDefStateManager;
 
-    private BasketPOM basketPOM;
-
+    public BasketNavStepdefs(StepDefStateManager stepDefStateManager) {
+        this.stepDefStateManager = stepDefStateManager;
+    }
 
     @When("I click the checkout link")
     public void iClickTheCheckoutLink() {
@@ -30,7 +29,8 @@ public class BasketNavStepdefs {
 
     @Then("I go to the checkout page")
     public void iGoToTheCheckoutPage() {
-        Assertions.assertTrue(basketPOM.goToCheckoutPage());
+        StepDefStateManager.getBasketPOM().goToCheckoutPage();
+        Assertions.assertEquals("https://www.saucedemo.com/checkout-step-one.html", stepDefStateManager.getPageURL());
     }
 
     @When("I click the continue shopping link")
@@ -39,7 +39,8 @@ public class BasketNavStepdefs {
 
     @Then("I go back to the products page")
     public void iGoBackToTheProductsPage() {
-        Assertions.assertTrue(basketPOM.goToProductsPage());
+        StepDefStateManager.getBasketPOM().goToProductsPage();
+        Assertions.assertEquals("https://www.saucedemo.com/inventory.html", stepDefStateManager.getPageURL());
     }
 
     @When("I click the item link")
@@ -48,6 +49,8 @@ public class BasketNavStepdefs {
 
     @Then("I go to the correct item page")
     public void iGoToTheCorrectItemPage() {
+        StepDefStateManager.getBasketPOM().goToItemPage();
+        Assertions.assertEquals("https://www.saucedemo.com/inventory-item.html?id=4", stepDefStateManager.getPageURL());
     }
 
 
