@@ -47,10 +47,43 @@ public class LoginPOM extends AbstractPOM{
         return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/inventory.html");
     }
 
+    public boolean lockedOutMessage(){
+        String lockedMessage = getWebDriver().findElement(By.className("error-button")).getText();
+        return lockedMessage.contains("locked out");
+    }
+
     public boolean invalidLogin(){
         getWebDriver().findElement(By.id("user-name")).sendKeys("random"); //may need to press login button instead
         getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
         return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/");
+    }
+
+    public boolean invalidLoginMessage(){
+        String lockedMessage = getWebDriver().findElement(By.className("error-button")).getText();
+        return lockedMessage.contains("do not match any user");
+    }
+
+    public boolean noUsernameLogin(){
+        getWebDriver().findElement(By.id("user-name")).sendKeys(""); //may need to press login button instead
+        getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
+        return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/");
+    }
+
+    public boolean noPasswordLogin(){
+        getWebDriver().findElement(By.id("user-name")).sendKeys("test"); //may need to press login button instead
+        getWebDriver().findElement(By.id("password")).sendKeys("", Keys.ENTER);
+        return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/");
+    }
+
+
+    public boolean invalidLoginMessageUsername(){
+        String lockedMessage = getWebDriver().findElement(By.className("error-button")).getText();
+        return lockedMessage.contains("Username is required");
+    }
+
+    public boolean invalidLoginMessagePassword(){
+        String lockedMessage = getWebDriver().findElement(By.className("error-button")).getText();
+        return lockedMessage.contains("Password is required");
     }
 
 
