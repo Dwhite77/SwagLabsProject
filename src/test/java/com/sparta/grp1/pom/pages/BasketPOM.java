@@ -15,7 +15,7 @@ public class BasketPOM extends AbstractPOM{
     }
 
     // work in progress
-    public boolean goToCheckoutPage(){
+    public boolean goToCheckoutPage() {
         getWebDriver().findElement(By.id("checkout")).click();
         return getPageURL().equals("https://www.saucedemo.com/checkout-step-one.html");
     }
