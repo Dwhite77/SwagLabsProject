@@ -11,12 +11,6 @@ public class ProductInfoPOM {
         this.webDriver = webDriver;
     }
 
-    public void loginToPage(String username) {
-        webDriver.findElement(By.id("user-name")).sendKeys(username);
-        webDriver.findElement(By.id("password")).sendKeys("secret_sauce");
-        webDriver.findElement(By.id("login-button")).click();
-    }
-
     public void clickOnProductName(String id) {
         clickById("item_"+id+"_title_link");
     }
