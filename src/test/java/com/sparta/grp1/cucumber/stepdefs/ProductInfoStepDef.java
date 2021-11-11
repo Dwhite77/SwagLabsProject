@@ -1,34 +1,25 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
 import com.sparta.grp1.pom.pages.ProductInfoPOM;
-import com.sparta.grp1.pom.util.DriverFactory;
-import com.sparta.grp1.pom.util.DriverUtil;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ProductInfoStepDef {
-    private WebDriver webDriver;
-    private ChromeDriverService service;
     private static ProductInfoPOM productInfoPOM;
-    private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+    private SepDefStateManager sepDefStateManager;
 
-
+    // PicoContainer injects class ContextSteps
+    public ProductInfoStepDef (SepDefStateManager sepDefStateManager) {
+        this.sepDefStateManager = sepDefStateManager;
+    }
 
     @Given("I am on the products page")
-    public void iAmOnTheProductsPage() { 
-      productInfoPOM = new ProductInfoPOM(webDriver);
+    public void iAmOnTheProductsPage() {
+        productInfoPOM = new ProductInfoPOM(sepDefStateManager.getWebDriver());
         //login to get to products page
         productInfoPOM.loginToPage("standard_user");
     }
@@ -50,7 +41,7 @@ public class ProductInfoStepDef {
 
     @And("Go back to products page")
     public void goBackToProductsPage() {
-        productInfoPOM.getWebDriver().navigate().back();
+        productInfoPOM.goBack();
     }
 
 
