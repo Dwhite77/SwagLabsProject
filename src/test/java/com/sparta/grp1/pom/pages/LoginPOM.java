@@ -45,7 +45,6 @@ public class LoginPOM extends AbstractPOM{
 
     public boolean loginSuccessful(){
         return getWebDriver().getCurrentUrl().equals("https://www.saucedemo.com/inventory.html");
-
     }
 
     public boolean invalidLogin(){
