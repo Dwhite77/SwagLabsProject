@@ -7,6 +7,7 @@ import java.io.File;
 public class DriverUtil {
     public static void setDriverLocation(String pathToDriver){
         System.setProperty("webDriver.chrome.driver", pathToDriver);
+        //System.setProperty("webDriver,chrome.silentOutput", "true");
     }
 
     public static ChromeDriverService getChromeDriverService(String pathToDriver){

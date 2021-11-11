@@ -17,7 +17,6 @@ public class ProductsPOM {
     }
 
 
-
     public void goToBasketPage(){
         webDriver.findElement(By.cssSelector(".shopping_cart_link")).click();
     }
