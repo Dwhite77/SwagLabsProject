@@ -4,11 +4,11 @@ package com.sparta.grp1.pom.pages;
 import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
 import org.openqa.selenium.WebDriver;
 
-public class COStepOnePOM extends StepDefStateManager {
+public class COStepOnePOM {
     private WebDriver webDriver;
 
     public COStepOnePOM(WebDriver webDriver) {
-        setWebDriver(webDriver);
+        this.webDriver = webDriver;
     }
 
 

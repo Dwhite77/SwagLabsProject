@@ -25,7 +25,7 @@ public class BasketFunctStepdefs {
 
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
-        stepDefStateManager.setBasketPOM(new BasketPOM(stepDefStateManager.getWebDriver()));
+        stepDefStateManager.setBasketPOM();
     }
 
     @When("I view my items")

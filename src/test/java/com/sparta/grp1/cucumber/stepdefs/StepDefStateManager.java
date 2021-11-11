@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class StepDefStateManager {
     private static boolean initialized = false;
-    private WebDriver webDriver;
+    private static WebDriver webDriver;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
     private static ChromeDriverService service;
     private static BasketPOM basketPOM;
@@ -38,8 +38,8 @@ public class StepDefStateManager {
         return basketPOM;
     }
 
-    public static void setBasketPOM(BasketPOM basketPOM) {
-        StepDefStateManager.basketPOM = basketPOM;
+    public static void setBasketPOM() {
+        StepDefStateManager.basketPOM = new BasketPOM(webDriver);
     }
 
     @Before
