@@ -23,6 +23,7 @@ public class BasketFunctStepdefs {
         this.stepDefStateManager = stepDefStateManager;
     }
 
+
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
         stepDefStateManager.setBasketPOM();

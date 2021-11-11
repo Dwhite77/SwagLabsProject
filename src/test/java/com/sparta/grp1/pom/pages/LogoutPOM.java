@@ -3,7 +3,8 @@ package com.sparta.grp1.pom.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static org.openqa.selenium.By.*;
+import java.util.concurrent.TimeUnit;
+
 
 public class LogoutPOM {
 
@@ -12,12 +13,19 @@ public class LogoutPOM {
     public LogoutPOM(WebDriver webDriver){
         this.webDriver = webDriver;
     }
+    public void loggingOut(){
 
-    public boolean loggedOut(){
-        webDriver.findElement(By.id("react-burger-menu-btn")).click();
+        webDriver.findElement(By.className("bm-burger-button")).click();
+        webDriver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
         webDriver.findElement(By.id("logout_sidebar_link")).click();
+    }
+
+
+    public boolean checkIfLoggedOut(){
         return webDriver.getCurrentUrl().equals("https://www.saucedemo.com/");
     }
+
+
 
 
 
