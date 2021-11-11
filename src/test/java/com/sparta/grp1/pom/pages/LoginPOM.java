@@ -14,7 +14,7 @@ public class LoginPOM  {
         STANDARD_USER,LOCKED_OUT_USER,PROBLEM_USER,PERFORMANCE_GLITCH_USER
     }
 
-    public String getUserName(userName user){
+    public String getUserName(userName user) {
         switch(user){
             case STANDARD_USER:
                 return "standard_user";

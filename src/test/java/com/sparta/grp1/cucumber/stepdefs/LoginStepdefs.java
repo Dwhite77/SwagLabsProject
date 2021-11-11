@@ -6,6 +6,10 @@ import com.sparta.grp1.pom.pages.LogoutPOM;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class LoginStepdefs {
@@ -13,6 +17,9 @@ public class LoginStepdefs {
     private static LoginPOM loginPOM;
     private static LogoutPOM logoutPOM;
     private StepDefStateManager stepDefStateManager;
+    private static LogoutPOM logoutPOM;
+
+
 
     public LoginStepdefs (StepDefStateManager stepDefStateManager) {
         this.stepDefStateManager = stepDefStateManager;
@@ -21,10 +28,10 @@ public class LoginStepdefs {
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
 
-        // add logout here
-       loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
-       logoutPOM = new LogoutPOM(stepDefStateManager.getWebDriver());
-       logoutPOM.loggingOut();
+        loginPOM = new LoginPOM(stepDefStateManager.getWebDriver());
+        logoutPOM =new LogoutPOM(stepDefStateManager.getWebDriver());
+        logoutPOM.loggingOut();
+
     }
 
     @When("Standard user enters the correct username and password")

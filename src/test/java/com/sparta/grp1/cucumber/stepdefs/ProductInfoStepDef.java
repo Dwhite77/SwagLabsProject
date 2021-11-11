@@ -21,7 +21,6 @@ public class ProductInfoStepDef {
     public void iAmOnTheProductsPage() {
         productInfoPOM = new ProductInfoPOM(stepDefStateManager.getWebDriver());
         //login to get to products page
-        //productInfoPOM.loginToPage("standard_user");
     }
 
     @When("I click on the product {string} name tag")
@@ -43,6 +42,4 @@ public class ProductInfoStepDef {
     public void goBackToProductsPage() {
         productInfoPOM.goBack();
     }
-
-
 }
