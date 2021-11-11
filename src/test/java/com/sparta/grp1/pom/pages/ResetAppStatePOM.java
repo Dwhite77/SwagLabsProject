@@ -1,9 +1,10 @@
 package com.sparta.grp1.pom.pages;
 
+import com.sparta.grp1.cucumber.stepdefs.AbstractPOM;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ResetAppStatePOM extends AbstractPOM{
+public class ResetAppStatePOM extends AbstractPOM {
 
     private WebDriver webDriver;
 
