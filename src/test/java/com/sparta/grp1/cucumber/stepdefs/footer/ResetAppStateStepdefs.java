@@ -1,11 +1,11 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.footer;
 
+import com.sparta.grp1.cucumber.stepdefs.util.StepDefStateManager;
 import com.sparta.grp1.pom.pages.LoginPOM;
 import com.sparta.grp1.pom.pages.ResetAppStatePOM;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 
 public class ResetAppStateStepdefs {
 

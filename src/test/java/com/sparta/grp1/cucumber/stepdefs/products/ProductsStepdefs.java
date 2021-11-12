@@ -1,6 +1,6 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.products;
 
-import com.sparta.grp1.pom.pages.LoginPOM;
+import com.sparta.grp1.cucumber.stepdefs.util.StepDefStateManager;
 import com.sparta.grp1.pom.pages.ProductsPOM;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

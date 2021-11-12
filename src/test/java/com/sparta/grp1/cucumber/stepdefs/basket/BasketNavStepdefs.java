@@ -1,19 +1,9 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.basket;
 
-import com.sparta.grp1.pom.pages.BasketPOM;
-import com.sparta.grp1.pom.util.DriverFactory;
-import com.sparta.grp1.pom.util.DriverUtil;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import com.sparta.grp1.cucumber.stepdefs.util.StepDefStateManager;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.io.IOException;
 
 public class BasketNavStepdefs {
 

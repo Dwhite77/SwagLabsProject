@@ -1,5 +1,6 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.footer;
 
+import com.sparta.grp1.cucumber.stepdefs.util.StepDefStateManager;
 import com.sparta.grp1.pom.fragements.SocialMediaTagsPOM;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

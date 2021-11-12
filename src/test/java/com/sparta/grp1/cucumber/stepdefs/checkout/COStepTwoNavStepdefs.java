@@ -1,8 +1,7 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.checkout;
 
-import com.sparta.grp1.pom.pages.BasketPOM;
+import com.sparta.grp1.cucumber.stepdefs.util.StepDefStateManager;
 import com.sparta.grp1.pom.pages.COStepTwoPOM;
-import com.sparta.grp1.pom.pages.ProductsPOM;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

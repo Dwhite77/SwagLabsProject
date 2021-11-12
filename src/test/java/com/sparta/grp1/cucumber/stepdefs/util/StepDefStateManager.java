@@ -1,8 +1,6 @@
-package com.sparta.grp1.cucumber.stepdefs;
+package com.sparta.grp1.cucumber.stepdefs.util;
 
 import com.sparta.grp1.pom.pages.BasketPOM;
-import com.sparta.grp1.pom.pages.LoginPOM;
-import com.sparta.grp1.pom.pages.ProductsPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
