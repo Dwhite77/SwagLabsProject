@@ -44,7 +44,6 @@ public class ProductsPOM {
                 break;
         }
 
-
     }
 
     public String getName(int num){
@@ -60,7 +59,6 @@ public class ProductsPOM {
         return nameArr;
     }
 
-    // dont have time to make this a very specific check, currently it only checks the first item name and if it matches what is expected then it passes
     public String getOrder(){
         switch (getNameArray().get(0)){
             case "Sauce Labs Backpack":

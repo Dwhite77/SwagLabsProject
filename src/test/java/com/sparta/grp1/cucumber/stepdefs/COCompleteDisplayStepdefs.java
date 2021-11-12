@@ -15,15 +15,11 @@ public class COCompleteDisplayStepdefs {
         this.stepDefStateManager = stepDefStateManager;
     }
 
-    @Given("I am on the checkout: overview page")
-    public void iAmOnTheCheckoutOverviewPage() {
-        coCompletePOM = new COCompletePOM(stepDefStateManager.getWebDriver());
-        coCompletePOM.goToCompleteCheckoutPage();
-    }
-
 
     @When("I am viewing the page")
     public void iAmViewingThePage() {
+        coCompletePOM = new COCompletePOM(stepDefStateManager.getWebDriver());
+        coCompletePOM.goToCompleteCheckoutPage();
         coCompletePOM.checkIfUserIsOnCompletePage();
     }
 
