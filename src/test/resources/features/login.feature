@@ -31,5 +31,8 @@ Feature: Ability to login
     When  User enters no password
     Then  The user will be displayed a password error message
 
-
-
+  Scenario: user session should timeout after a while
+    Given I am on the products page
+    When cookie has expired
+    Then user should be logged out
+    And a reason should be displayed

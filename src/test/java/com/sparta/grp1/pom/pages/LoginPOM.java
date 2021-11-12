@@ -1,9 +1,7 @@
 package com.sparta.grp1.pom.pages;
 
 import com.sparta.grp1.cucumber.stepdefs.StepDefStateManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
 public class LoginPOM  {
 
@@ -84,5 +82,8 @@ public class LoginPOM  {
         return lockedMessage.contains("Password is required");
     }
 
-
+    public void inValidateSession() {
+        webDriver.manage().deleteAllCookies();
+        webDriver.navigate().refresh();
+    }
 }

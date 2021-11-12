@@ -3,6 +3,7 @@ package com.sparta.grp1.cucumber.stepdefs;
 import com.sparta.grp1.pom.pages.LoginPOM;
 
 import com.sparta.grp1.pom.pages.LogoutPOM;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +11,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class LoginStepdefs {
@@ -94,6 +97,14 @@ public class LoginStepdefs {
         loginPOM.invalidLoginMessagePassword();
     }
 
+    @When("cookie has expired")
+    public void cookieHasExpired() {loginPOM.inValidateSession();}
 
+    @Then("user should be logged out")
+    public void userShouldBeLoggedOut() {assertFalse(loginPOM.loginSuccessful());}
 
+    @And("a reason should be displayed")
+    public void aReasonShouldBeDisplayed() {
+        assertTrue(loginPOM.invalidLogin());
+    }
 }
