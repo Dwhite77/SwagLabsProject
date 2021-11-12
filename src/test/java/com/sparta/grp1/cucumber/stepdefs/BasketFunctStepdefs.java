@@ -50,7 +50,6 @@ public class BasketFunctStepdefs {
 
     @When("I remove an item")
     public void iRemoveAnItem() {
-        System.out.println(ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName());
         StepDefStateManager.getBasketPOM().removeBasketItem();
     }
 
