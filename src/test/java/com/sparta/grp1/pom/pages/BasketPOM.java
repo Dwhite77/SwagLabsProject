@@ -28,24 +28,24 @@ public class BasketPOM {
         webDriver.findElement(By.id("continue-shopping")).click();
     }
 
-    public void addItemToBasket(){
+    public void addItemToBasket(int itemId){
         ProductsPOM productsPOM = new ProductsPOM(webDriver);
         goToProductsPage();
-        webDriver.findElement(By.id("add-to-cart" + ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName())).click();
+        webDriver.findElement(By.id("add-to-cart" + ProductsPOM.getAllProducts().get(itemId).getHyphenSeparatedName())).click();
         productsPOM.goToBasketPage();
     }
 
-    public String lookForBasketInItem(){
-        return webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(4).getId())).getText();
+    public String lookForBasketInItem(int itemId){
+        return webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(itemId).getId())).getText();
     }
 
-    public void removeBasketItem(){
-        webDriver.findElement(By.id("remove" + ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName())).click();
+    public void removeBasketItem(int itemId){
+        webDriver.findElement(By.id("remove" + ProductsPOM.getAllProducts().get(itemId).getHyphenSeparatedName())).click();
     }
 
-    public void goToItemPage(){
-        addItemToBasket();
-        webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(4).getId())).click();
+    public void goToItemPage(int itemId){
+        addItemToBasket(itemId);
+        webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(itemId).getId())).click();
     }
 
     public int numberOfItemsInBasket(){

@@ -34,23 +34,23 @@ public class BasketFunctStepdefs {
 
     @When("I view my items")
     public void iViewMyItems() {
-        StepDefStateManager.getBasketPOM().addItemToBasket();
+        StepDefStateManager.getBasketPOM().addItemToBasket(4);
     }
 
     @Then("I see the correct items")
     public void iSeeTheCorrectItems() {
-        Assertions.assertEquals("Sauce Labs Backpack", StepDefStateManager.getBasketPOM().lookForBasketInItem());
+        Assertions.assertEquals("Sauce Labs Backpack", StepDefStateManager.getBasketPOM().lookForBasketInItem(4));
     }
 
     @Given("I am have items in the basket")
     public void iAmHaveItemsInTheBasket() {
         stepDefStateManager.setBasketPOM();
-        StepDefStateManager.getBasketPOM().addItemToBasket();
+        StepDefStateManager.getBasketPOM().addItemToBasket(4);
     }
 
     @When("I remove an item")
     public void iRemoveAnItem() {
-        StepDefStateManager.getBasketPOM().removeBasketItem();
+        StepDefStateManager.getBasketPOM().removeBasketItem(4);
     }
 
     @Then("the correct item is removed")
