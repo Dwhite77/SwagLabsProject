@@ -1,15 +1,18 @@
 package com.sparta.grp1.pom.pages;
 
+import com.sparta.grp1.pom.util.Products;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class ProductsPOM {
 
     private WebDriver webDriver;
+    private static HashMap<Integer, Products> allProducts = new HashMap<>();
 
 
     public ProductsPOM(WebDriver webDriver){
@@ -78,5 +81,17 @@ public class ProductsPOM {
         }return "invalid";
     }
 
+    public static void addAllProducts(){
+        allProducts.put(0, new Products(Products.itemIDNameGenerator(0), "Sauce Labs Bike Light"));
+        allProducts.put(1, new Products(Products.itemIDNameGenerator(1), "Sauce Labs Bolt T-Shirt"));
+        allProducts.put(2, new Products(Products.itemIDNameGenerator(2), "Sauce Labs Onesie"));
+        allProducts.put(3, new Products(Products.itemIDNameGenerator(3), "Test.allTheThings() T-Shirt (Red)"));
+        allProducts.put(4, new Products(Products.itemIDNameGenerator(4), "Sauce Labs Backpack"));
+        allProducts.put(5, new Products(Products.itemIDNameGenerator(5), "Sauce Labs Fleece Jacket"));
 
+    }
+
+    public static HashMap<Integer, Products> getAllProducts() {
+        return allProducts;
+    }
 }
