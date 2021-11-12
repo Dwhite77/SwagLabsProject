@@ -31,22 +31,21 @@ public class BasketPOM {
     public void addItemToBasket(){
         ProductsPOM productsPOM = new ProductsPOM(webDriver);
         goToProductsPage();
-        webDriver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+        webDriver.findElement(By.id("add-to-cart" + ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName())).click();
         productsPOM.goToBasketPage();
     }
 
     public String lookForBasketInItem(){
-        return webDriver.findElement(By.id("item_4_title_link")).getText();
+        return webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(4).getId())).getText();
     }
 
     public void removeBasketItem(){
-        webDriver.findElement(By.id("remove-sauce-labs-backpack")).click();
+        webDriver.findElement(By.id("remove" + ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName())).click();
     }
 
     public void goToItemPage(){
-        String itemName;
         addItemToBasket();
-        webDriver.findElement(By.id("item_4_title_link")).click();
+        webDriver.findElement(By.id(ProductsPOM.getAllProducts().get(4).getId())).click();
     }
 
     public int numberOfItemsInBasket(){

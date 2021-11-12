@@ -1,6 +1,7 @@
 package com.sparta.grp1.cucumber.stepdefs;
 
 import com.sparta.grp1.pom.pages.BasketPOM;
+import com.sparta.grp1.pom.pages.ProductsPOM;
 import com.sparta.grp1.pom.util.DriverFactory;
 import com.sparta.grp1.pom.util.DriverUtil;
 import io.cucumber.java.After;
@@ -28,6 +29,7 @@ public class BasketFunctStepdefs {
     @Given("I am on the basket page")
     public void iAmOnTheBasketPage() {
         stepDefStateManager.setBasketPOM();
+        ProductsPOM.addAllProducts();
     }
 
     @When("I view my items")
@@ -48,6 +50,7 @@ public class BasketFunctStepdefs {
 
     @When("I remove an item")
     public void iRemoveAnItem() {
+        System.out.println(ProductsPOM.getAllProducts().get(4).getHyphenSeparatedName());
         StepDefStateManager.getBasketPOM().removeBasketItem();
     }
 
