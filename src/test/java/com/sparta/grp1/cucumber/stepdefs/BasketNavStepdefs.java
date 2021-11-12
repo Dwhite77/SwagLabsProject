@@ -49,7 +49,7 @@ public class BasketNavStepdefs {
 
     @Then("I go to the correct item page")
     public void iGoToTheCorrectItemPage() {
-        StepDefStateManager.getBasketPOM().goToItemPage();
+        StepDefStateManager.getBasketPOM().goToItemPage(4);
         Assertions.assertEquals("https://www.saucedemo.com/inventory-item.html?id=4", stepDefStateManager.getPageURL());
     }
 
