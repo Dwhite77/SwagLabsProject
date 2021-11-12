@@ -14,7 +14,6 @@ public class ProductsPOM {
     private WebDriver webDriver;
     private static HashMap<Integer, Products> allProducts = new HashMap<>();
 
-
     public ProductsPOM(WebDriver webDriver){
         this.webDriver = webDriver;
     }
