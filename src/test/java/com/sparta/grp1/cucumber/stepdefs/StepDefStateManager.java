@@ -88,7 +88,6 @@ public class StepDefStateManager {
 
         getWebDriver().findElement(By.id("user-name")).sendKeys(getUserName(USER)); //may need to press login button instead
         getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
-
     }
 
     @After
