@@ -19,8 +19,8 @@ public class COStepTwoNavStepdefs {
         this.stepDefStateManager = stepDefStateManager;
     }
 
-    @Given("I am on the checkout: overview page s2")
-    public void iAmOnTheCheckoutOverviewPageS2() {
+    @Given("I am on the checkout: overview page")
+    public void iAmOnTheCheckoutOverviewPage() {
         coStepTwoPOM = new COStepTwoPOM(stepDefStateManager.getWebDriver());
         coStepTwoPOM.goToStep2Page();
     }
@@ -45,4 +45,6 @@ public class COStepTwoNavStepdefs {
     public void iGoBackToTheProductPage() {
         Assertions.assertEquals("https://www.saucedemo.com/inventory.html", stepDefStateManager.getPageURL());
     }
+
+
 }
