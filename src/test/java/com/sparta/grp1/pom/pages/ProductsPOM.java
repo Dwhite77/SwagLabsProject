@@ -1,5 +1,6 @@
 package com.sparta.grp1.pom.pages;
 
+import com.sparta.grp1.pom.util.Products;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 public class ProductsPOM {
 
     private WebDriver webDriver;
+    private static ArrayList<Products> allProducts = new ArrayList<>();
 
 
     public ProductsPOM(WebDriver webDriver){
@@ -78,5 +80,14 @@ public class ProductsPOM {
         }return "invalid";
     }
 
+    public static void addAllProducts(){
+        allProducts.add(new Products(Products.itemIDNameGenerator(0), "Sauce Labs Bike Light"));
+        allProducts.add(new Products(Products.itemIDNameGenerator(1), "Sauce Labs Bolt T-Shirt"));
+        allProducts.add(new Products(Products.itemIDNameGenerator(2), "Sauce Labs Onesie"));
+        allProducts.add(new Products(Products.itemIDNameGenerator(3), "Test.allTheThings() T-Shirt (Red)"));
+        allProducts.add(new Products(Products.itemIDNameGenerator(4), "Sauce Labs Backpack"));
+        allProducts.add(new Products(Products.itemIDNameGenerator(5), "Sauce Labs Fleece Jacket"));
+
+    }
 
 }
