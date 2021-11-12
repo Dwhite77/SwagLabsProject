@@ -20,6 +20,7 @@ public class StepDefStateManager {
 
     private static WebDriver webDriver;
     private static final String DRIVER_LOCATION = "src/test/resources/drivers/chromedriver.exe";
+    private static final userName USER = userName.STANDARD_USER;
     private static ChromeDriverService service;
     private static BasketPOM basketPOM;
 
@@ -52,7 +53,7 @@ public class StepDefStateManager {
         STANDARD_USER,LOCKED_OUT_USER,PROBLEM_USER,PERFORMANCE_GLITCH_USER
     }
 
-    public String getUserName(LoginPOM.userName user){
+    public String getUserName(userName user){
         switch(user){
             case STANDARD_USER:
                 return "standard_user";
@@ -84,9 +85,8 @@ public class StepDefStateManager {
         chromeOptions.addArguments("--window-size=1265,1380");
         webDriver = DriverFactory.getWebDriver(DriverFactory.Browsers.CHROME, service, chromeOptions);
         webDriver.get(getBaseURL());
-        System.out.println(webDriver.getCurrentUrl());
 
-        getWebDriver().findElement(By.id("user-name")).sendKeys(getUserName(LoginPOM.userName.STANDARD_USER)); //may need to press login button instead
+        getWebDriver().findElement(By.id("user-name")).sendKeys(getUserName(USER)); //may need to press login button instead
         getWebDriver().findElement(By.id("password")).sendKeys("secret_sauce", Keys.ENTER);
 
     }

@@ -62,3 +62,4 @@ Feature: Ability to order items on page
     When I click on the ordering dropdown
     And Click Price(H-L)
     Then The item ordering should be Price(H-L)
+
