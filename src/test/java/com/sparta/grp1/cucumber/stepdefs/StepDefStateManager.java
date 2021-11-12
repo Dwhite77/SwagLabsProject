@@ -97,5 +97,4 @@ public class StepDefStateManager {
         webDriver.quit();
     }
 
-
 }
